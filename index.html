@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>個人網站</title>
+	<link rel="stylesheet" type="text/css" href="assests/css.css">
+</head>
+<body>
+	<header>
+		<img class="top_name" src="img/name3.png" width="50%">
+	</header>
+	<nav>
+		<table align="center">
+			<tr>
+				<td class="t" align="center"><a href="#basic"><img class="basic" src="img/basic.png" alt=""></a></td>
+				<td class="t" align="center"><a href="#experience"><img class="experience" src="img/experience.png" alt=""></a></td>
+				<td class="t" align="center"><a href="#goal"><img class="goal" src="img/goal.png" alt=""></a></td>
+				<td class="t" align="center"><a href="#photos"><img class="photos" src="img/photos.png" alt=""></a></td>
+			</tr>
+		</table>
+	</nav>
+	<div class="back">
+	<section class="section">
+		<h1 id="basic">基本資料</h1>
+		<hr>
+		<div class="a">
+		<h2>基本資料</h2>
+		<p>學校：中原大學</p>
+		<p>系級：資管二甲</p>
+		<p>姓名：林家宏</p>
+		<p>生日：1999年10月28日</p>
+		</div>
+		<img class="basic_photo" src="img/basic.jpg" alt="">
+		<h2 style="clear: left;">興趣</h2>
+		<p>興趣：打電腦、看實況、聽音樂</p>
+		<h2>專長</h2>
+		<p>專長：打遊戲</p>
+		<img src="img/game.jpg" alt="">
+		<h1 id="experience">個人經驗</h1>
+		<hr>
+		<h2>工作經驗</h2>
+		<p>曾在飯店打過工，由於早班晚班都有涉略，所有對於打工部分略有心得，也有在廚房煮顧客的早飯，所以對於煮菜一事也有許多經驗，晚班處理緊急事務更有一定的處理能力。</p>
+		<img src="img/work.jpg" alt="">
+		<h2>社團經驗</h2>
+		<p>目前以課業為重，並沒有參加任何社團，不過個人對所有社團都頗有興趣的~~</p>
+		<h1 id="goal">未來期許</h1>
+		<hr>
+		<h2>大學的自我期許</h2>
+		<p>希望自己能在大學時期多多學習，把程式學習的淋漓盡致，並且一步一步的慢慢進步，最後能夠順利畢業~~~</p>
+		<h2>目標</h2>
+		<p>希望能在大學期間獲得更多的學習機會!!!</p>
+		<h1 id="photos">生活照片</h1>
+		<img class="life_l" src="img/photos1.jpg" alt="">
+		<img class="life_r" src="img/photos2.jpg" alt="">
+		<br>
+		<img class="life_l" src="img/photos3.jpg" alt="">
+		<img class="life_r" src="img/photos4.jpg" alt="">
+		<br>
+		<img class="life_l" src="img/photos5.jpg" alt="">
+		<img class="life_r" src="img/photos6.jpg" alt="">
+	</section>
+	<aside class="aside">
+		<p>電話:0928616968</p>
+		<p>地址:桃園市楊梅區永美路445巷74弄27號</p>
+		<p>email:bobbyleo881028@gmail.com</p>
+		<p>FB：<a href="https://www.facebook.com/profile.php?id=100003189828250" title=""><img class="b" src="img/fb.png" alt=""></a></p>
+	</aside>
+	<footer>
+		<p>Copyright © 2019 by ling1028</p>
+	</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<button type="button" id="BackTop" class="toTop-arrow"></button>
+	<script>
+		$(function(){
+			$('#BackTop').click(function(){ 
+				$('html,body').animate({scrollTop:0}, 333);
+			});
+			$(window).scroll(function() {
+				if ( $(this).scrollTop() > 300 ){
+					$('#BackTop').fadeIn(222);
+				} else {
+					$('#BackTop').stop().fadeOut(222);
+				}
+			}).scroll();
+		});
+	</script>
+</body>
+</html>
