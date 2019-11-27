@@ -1,0 +1,105 @@
+.basic_photo{
+	float: right;
+	clear: right;
+}
+.t{
+	text-align: center;
+	width: 500px;
+}
+h1{
+	font-size: 38px;
+	background-color: rgb(250,250,210);
+}
+h2{
+	font-size: 32px;
+	background-color: rgb(84,250,199);
+}
+p{
+	font-size: 28px;
+}
+.life_r{
+	width: 25%;
+	margin-left: 200px;
+	margin-right: 50px;
+}
+.life_l{
+	margin: 5px;
+	width: 25%;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.section{
+	float: left;
+	width: 60%;
+	margin-top: 3%;
+	height: 30%;
+	margin-left: 2%;
+}
+.aside{
+	float: right;
+	width: 18%
+	margin-right:5px;
+	margin-top:2%;
+	background-color: rgb(193,255,193);
+	height: 3500px;
+	border-radius: 25px;
+}
+.back{
+	background: rgba(255,255,255,0.8);
+	border-radius: 25px;
+	margin-top: 3%;
+	margin-left:  5% ;
+	margin-right:  5%;
+	margin-bottom: 3%;
+	height: 3600px;
+}
+body{
+	background-image: url("../img/background.jpg");
+	background-size: cover;
+	font-family: "微軟正黑體";
+}
+.a{
+	float: left;
+}
+.b{
+	width: 50px;
+	margin: auto;
+}
+footer{
+	bottom: 0;
+	text-align: center;
+	background: rgb(255,255,255,255);
+	clear: both;
+}
+.toTop-arrow {
+	width: 3.5rem;
+	height: 3.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 31px;
+	height: 7px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.4rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.4rem;
+}
+.toTop-arrow:focus {outline: none;}
